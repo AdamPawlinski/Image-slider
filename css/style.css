@@ -3,21 +3,33 @@ body {
   width: 800px;
   margin: 50px auto;
 }
-.carousel {
+#carousel {
   margin: 50px auto;
   height: 350px;
   width: 500px;
   overflow: hidden;
   border: 5px;
-  position:
 }
-.carousel ul {
+#images {
   width: 2500px;
+  height: 350px;
   list-style: none;
 }
-.carousel ul li {
+#carousel ul li {
   width: 500px;
   height: 350px;
   list-style: none;
-  float: right;
+  float: left;
+}
+.controls {
+  border-radius: 50%;
+  background-color: #717272;
+
+}
+.controls:hover {
+			background-color: $FFF;
+}
+.nav::after{
+  display: block;
+  top: 50%;
 }

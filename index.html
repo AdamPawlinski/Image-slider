@@ -5,29 +5,45 @@
 	<title>JQuery carousel</title>
 	<link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 </head>
 <body>
-	<section>
-	  <h3>Carousel</h3>
-		<div class="carousel">
-			<ul>
-				<li>
+	<h3>Carousel</h3>
+	<section id="mountain-Carousel" class="carousel">
+		<ul class="carousel-pointers">
+			<li class="image1">	</li>
+			<li class="image2">	</li>
+			<li class="image3">	</li>
+			<li class="image4">	</li>
+			<li class="image5">	</li>
+		</ul>
+		<div id="carousel">
+			<ul id="images">
+				<li class="item">
 					<img src="https://cdn.stocksnap.io/img-thumbs/960w/HXHKOKEQOE.jpg" />
 				</li>
-				<li>
+				<li class="item">
+					<img src="https://cdn.stocksnap.io/img-thumbs/960w/GM3VPV2VOY.jpg" />
+				</li>
+				<li class="item">
 					<img src="https://cdn.stocksnap.io/img-thumbs/960w/HXHKOKEQOE.jpg" />
 				</li>
-				<li>
+				<li class="item">
 					<img src="https://cdn.stocksnap.io/img-thumbs/960w/HXHKOKEQOE.jpg" />
 				</li>
-				<li>
-					<img src="https://cdn.stocksnap.io/img-thumbs/960w/HXHKOKEQOE.jpg" />
-				</li>
-				<li>
+				<li class="item">
 					<img src="https://cdn.stocksnap.io/img-thumbs/960w/HXHKOKEQOE.jpg" />
 				</li>
 			</ul>
+			<div id="nav">
+				<button id="left" href="#mountain-Carousel">
+			    <i class="far chevron-circle-left">Previous</i>
+				</button>
+				<button id="right" href="#mountain-Carousel">
+			    <i class="far chevron-circle-right">Next</i>
+				</button>
+			</div>
 		</div>
 	</section>
 	<script language="javascript" src="js/script.js"></script>
