@@ -26,20 +26,29 @@ body {
   float: left;
 }
 
-.controls {
-  border-radius: 50%;
-  background-color: #717272;
-
+.nav {
+  margin: 50px auto;
 }
 
-.controls:hover {
-			background-color: $FFF;
+.nav button > i {
+  font-size: 48px;
+  color: #FFF;
+  align: center;
 }
+
+/*.nav #left {
+  left: 0;
+  top: 50%;
+}
+
+.nav #right {
+  right: 0;
+  top: 50%;
+}*/
 
 .slides-number {
   margin: 5px 0 0 0;
   text-align: center;
-  z-index: 10;
 }
 
 .slides-number a {
@@ -49,4 +58,14 @@ body {
    border-radius: 50%;
    padding: 2px 6px;
    color: #FFFFFF;
+}
+
+.slides-number a:hover {
+  filter: brightness(.8);
+}
+
+.item img:target {
+  left: 0;
+  z-index: 2;
+  opacity: 1;
 }

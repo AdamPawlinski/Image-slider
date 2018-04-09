@@ -6,18 +6,11 @@
 	<link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 <body>
 	<h3>Carousel</h3>
 	<section id="mountain-Carousel" class="carousel">
-		<ul class="carousel-pointers">
-			<li class="image1">	</li>
-			<li class="image2">	</li>
-			<li class="image3">	</li>
-			<li class="image4">	</li>
-			<li class="image5">	</li>
-		</ul>
 		<div id="carousel">
 			<ul id="images">
 				<li class="item" id="slide1">
@@ -37,14 +30,16 @@
 				</li>
 			</ul>
 		</div>
-		<div id="nav">
+
+		<div class="nav">
 			<button id="left">
-				<i class="far chevron-circle-left">Previous</i>
+				<i class="far caret-left"></i>
 			</button>
 			<button id="right">
-				<i class="far chevron-circle-right">Next</i>
+				<i class="far caret-right"></i>
 			</button>
 		</div>
+
 		<div class="slides-number">
       <a href="#slide1">1</a>
       <a href="#slide2">2</a>
@@ -53,6 +48,7 @@
       <a href="#slide5">5</a>
     </div>
 	</section>
+	
 	<script language="javascript" src="js/script.js"></script>
 </body>
 </html>
