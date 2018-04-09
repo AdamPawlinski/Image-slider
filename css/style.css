@@ -3,33 +3,50 @@ body {
   width: 800px;
   margin: 50px auto;
 }
+
 #carousel {
   margin: 50px auto;
   height: 350px;
   width: 500px;
   overflow: hidden;
   border: 5px;
+  position: relative;
 }
+
 #images {
   width: 2500px;
   height: 350px;
   list-style: none;
 }
+
 #carousel ul li {
   width: 500px;
   height: 350px;
   list-style: none;
   float: left;
 }
+
 .controls {
   border-radius: 50%;
   background-color: #717272;
 
 }
+
 .controls:hover {
 			background-color: $FFF;
 }
-.nav::after{
-  display: block;
-  top: 50%;
+
+.slides-number {
+  margin: 5px 0 0 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slides-number a {
+   display: inline-block;
+   text-decoration: none;
+   background: #2c7af7;
+   border-radius: 50%;
+   padding: 2px 6px;
+   color: #FFFFFF;
 }
