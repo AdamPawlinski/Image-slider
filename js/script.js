@@ -1,4 +1,8 @@
 $(function(){
+  var start = function carouselStart(){
+    setInterval(changeSlide, 3000);
+  }
+
   var carouselList = $("#images");
   function moveSlide(){
     var firstItem = carouselList.find("li:first");
@@ -19,13 +23,9 @@ $(function(){
   }
 
   $('#left').on('click', function(){
-    carouselList.animate({marginLeft:500}, moveSlidePrev);
+    carouselList.animate({marginLeft:500}, 1000, moveSlidePrev);
   });
   $('#right').on('click', function(){
-    carouselList.animate({marginLeft:-500}, moveSlide)
-  });
-
-  function carouselStart(){
-    setInterval(changeSlide, 3000);
-  }
+    carouselList.animate({marginLeft:-500}, 1000, moveSlide)
+  });  
 });
