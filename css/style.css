@@ -14,7 +14,6 @@ body {
   height: 350px;
   width: 500px;
   overflow: hidden;
-  border: 5px;
   position: relative;
 }
 
@@ -29,6 +28,7 @@ body {
   height: 350px;
   list-style: none;
   float: left;
+  background-size: cover;
 }
 
 .carousel h3 {
@@ -67,8 +67,4 @@ body {
 
 .slides-number a:hover {
   filter: brightness(.8);
-}
-
-.item img:target {
-  left: 0;
 }
