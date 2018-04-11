@@ -9,10 +9,6 @@ $(function(){
     carouselList.css({marginLeft:0});
   }
 
-  function carouselStart(){
-    interval;
-  }
-
   function changeSlide(){
     carouselList.animate({marginLeft:-500}, 3000, moveSlide);
   }
@@ -27,17 +23,16 @@ $(function(){
   $('#left').on('click', function(){
     clearInterval(interval);
     carouselList.animate({marginLeft:500}, 1000, moveSlidePrev);
-    setInterval(changeSlide, 3000);
+    // setInterval(changeSlide, 3000);
   });
   $('#right').on('click', function(){
     clearInterval(interval);
     carouselList.animate({marginLeft:-500}, 1000, moveSlide);
-    setInterval(changeSlide, 3000);
+    // setInterval(changeSlide, 3000);
   });
 
   $('.slides-number > a').on('click', function(){
     clearInterval(interval);
   })
 
-  carouselStart();
 });

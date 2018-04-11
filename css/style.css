@@ -28,7 +28,11 @@ body {
   height: 350px;
   list-style: none;
   float: left;
-  background-size: cover;
+}
+
+.item img {
+  width: 500px;
+  object-fit: cover;
 }
 
 .carousel h3 {
