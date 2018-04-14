@@ -23,16 +23,17 @@ $(function(){
   $('#left').on('click', function(){
     clearInterval(interval);
     carouselList.animate({marginLeft:500}, 1000, moveSlidePrev);
-    // setInterval(changeSlide, 3000);
+    interval = setInterval(changeSlide, 3000);
   });
   $('#right').on('click', function(){
     clearInterval(interval);
     carouselList.animate({marginLeft:-500}, 1000, moveSlide);
-    // setInterval(changeSlide, 3000);
+    interval = setInterval(changeSlide, 3000);
   });
 
   $('.slides-number > a').on('click', function(){
-    clearInterval(interval);
+    setTimeout(changeSlide, 5000);
+    interval = setInterval(changeSlide, 3000);
   })
 
 });
