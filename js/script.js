@@ -1,6 +1,6 @@
 $(function(){
   var carouselList = $("#images");
-  var interval = setInterval(changeSlide, 3000);
+  var interval = setInterval(changeSlide, 8000);
 
   function moveSlide(){
     var firstItem = carouselList.find("li:first");
@@ -10,7 +10,7 @@ $(function(){
   }
 
   function changeSlide(){
-    carouselList.animate({marginLeft:-500}, 3000, moveSlide);
+    carouselList.animate({marginLeft:-500}, 3000, "swing", moveSlide);
   }
 
   function moveSlidePrev(){

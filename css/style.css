@@ -3,31 +3,38 @@
 body {
   font-size: 18px;
   width: 600px;
-  margin: 50px auto;
+  margin: 2rem auto;
   display: flex;
   justify-content: center;
   background-color: #eafafc;
 }
 
+.carousel-container { 
+  border: 0;
+  border-radius: 5%;  
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  padding: 2rem;
+}
+
 #carousel {
-  margin: 50px auto;
+  margin: 2rem auto;
   height: 350px;
   width: 500px;
   overflow: hidden;
   position: relative;
 }
 
-#images {
+.images-container {
   width: 2500px;
   height: 350px;
   list-style: none;
 }
 
-#carousel ul li {
+.images-container li {
   width: 500px;
   height: 350px;
   list-style: none;
-  float: left;
+  float: left;  
 }
 
 .item img {
@@ -35,40 +42,64 @@ body {
   object-fit: cover;
 }
 
-.carousel h3 {
-  font-family: 'Hi Melody';
+.carousel-container h3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Hi Melody', sans-serif;
   font-size: 48px;
 }
 
-.nav {
+.controls {
   display: flex;
-  justify-content: space-between;
-  margin: 50px auto;
+  justify-content: space-between;  
+  margin: 2rem auto;
 }
 
-.nav button {
-  font-size: 24px;
-  color: #FFF;
-  align: center;
-  background: linear-gradient(to bottom, #ccf7fc, #05b6fc, #ccf7fc);
+.nav {
+  display: flex;    
+  justify-content: center; 
+  align-items: center; 
+  font-size: 1.5rem;
+  color: #FFF;  
+  background: #05b6fc;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
   border-style: none;
-  width: 10vh;
+  width: 3rem;
+}
+
+.nav:hover{
+  filter: brightness(.8);
+  color: rgb(0,0,0);;
 }
 
 .slides-number {
-  margin: 5px 0 0 0;
-  text-align: center;
+  display: inline-block;
+  align-items: center;
+  font-family: 'Hi Melody', sans-serif;   
+  font-weight: bold;
 }
 
-.slides-number a {
-   display: inline-block;
+.slides-number li{
+  display: inline-block;
+  list-style: none;
+}
+
+.slides-number a {  
+   display: flex;    
+   justify-content: center; 
+   align-items: center;   
+   font-size: 1.3rem;
+   width: 1.5rem;
+   height: 1.5rem;   
    text-decoration: none;
    background: #05b6fc;
+   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
    border-radius: 50%;
-   padding: 2px 6px;
+   padding: .2rem;
    color: #FFFFFF;
 }
 
 .slides-number a:hover {
   filter: brightness(.8);
+  color: rgb(0,0,0);
 }
