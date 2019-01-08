@@ -16,12 +16,15 @@ body {
   padding: 2rem;
 }
 
-#carousel {
-  margin: 2rem auto;
-  height: 350px;
+.carousel-window {
+  margin: 0 auto;
+  height: 330px;
   width: 500px;
   overflow: hidden;
   position: relative;
+  border: 0;
+  border-radius: 5%;  
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 }
 
 .images-container {
@@ -39,7 +42,11 @@ body {
 
 .item img {
   width: 500px;
-  object-fit: cover;
+  object-fit: cover;  
+}
+
+.item img:hover {
+  opacity: .8;  
 }
 
 .carousel-container h3 {
@@ -64,6 +71,7 @@ body {
   background: #05b6fc;
   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
   border-style: none;
+  border-radius: 5%;
   width: 3rem;
 }
 
